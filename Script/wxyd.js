@@ -5,9 +5,9 @@ var path = $request.path;
 function modify_card() {
   let obj = JSON.parse(body);
   obj["expired"] = 0;
-	obj["expiredTime"] = 1591804799;
-	obj["remainTime"] = 86313600;
-	body = JSON.stringify(obj);
+  obj["expiredTime"] = 1591804799;
+  obj["remainTime"] = 86313600;
+  body = JSON.stringify(obj);
 }
 
 function modify_balance() {
