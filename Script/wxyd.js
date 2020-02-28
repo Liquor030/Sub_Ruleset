@@ -4,7 +4,6 @@ const path2 = "/incentive/cancelFirstCharge";
 var path = $request.path;
 function modify_card() {
   let obj = JSON.parse(body);
-  obj["remainCoupon"] = 99999;
   obj["expiredTime"] = 1594223999;
   obj["expired"] = 0;
   obj["remainTime"] = 1330440;
