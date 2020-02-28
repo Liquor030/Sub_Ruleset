@@ -1,0 +1,7 @@
+var body = $response.body;
+var url = $request.url;
+const path = "/pay/buyChapters";
+if (url.indexOf(path) != -1) {
+  body = '{"succ":1,"price":0.11,"balance":29.78}';
+ }
+$done({body});
