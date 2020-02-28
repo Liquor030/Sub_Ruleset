@@ -4,10 +4,10 @@ const path2 = "/incentive/cancelFirstCharge";
 var path = $request.path;
 function modify_card() {
   let obj = JSON.parse(body);
-  obj["expiredTime"] = 1594223999;
   obj["expired"] = 0;
-  obj["remainTime"] = 1330440;
-  body = JSON.stringify(obj);
+	obj["expiredTime"] = 1591804799;
+	obj["remainTime"] = 86313600;
+	body = JSON.stringify(obj);
 }
 
 function modify_balance() {
