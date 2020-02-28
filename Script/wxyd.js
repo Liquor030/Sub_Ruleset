@@ -1,11 +1,11 @@
 var body = $response.body;
 var url = $request.url;
-const path = "/incentive/cancelFirstCharge";
+const path = "/pay/balance";
 let obj = JSON.parse(body);
 if (url.indexOf(path) != -1) {
-  obj["hasCancelPayIncentive"] = 1;
-  obj["sentChapterCount"] = 3;
-  obj["chance"] = 1;
-	body = JSON.stringify(obj);
+  obj["balance"] = 200;
+  obj["giftBalance"] = 100;
+  obj["peerBalance"] = 100;
+  body = JSON.stringify(obj);
  }
 $done({body});
