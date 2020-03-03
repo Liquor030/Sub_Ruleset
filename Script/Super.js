@@ -15,4 +15,6 @@ if (obj.data.data) {
 }
 var obj2 = JSON.stringify(obj);
 var new_response = obj2.replace(/\"cell_id\":\d+,\"cell_id_str\":\"(\d+)\"/g,'\"cell_id\":$1,\"cell_id_str\":\"$1\"');
-$done({body: JSON.stringify(new_response)});
+let reg = /\\/g;
+let replaceAfter = new_response.replace(reg,'');
+$done({body: JSON.stringify(replaceAfter)});
