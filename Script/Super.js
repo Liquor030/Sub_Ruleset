@@ -5,7 +5,8 @@ http-response ^https?://[a-z]*\.snssdk\.com/bds/feed/stream/ requires-body=1,max
 [MITM]
 hostname = *.snssdk.com
 */
-var obj = JSON.parse($response.body);
+var new_response = $response.body.replace(/\"cell_id\":(\d+)/g,'\"cell_id\":\"$1\"');
+var obj = JSON.parse(new_response);
 if (obj.data.data) {
   for (var i = obj.data.data.length - 1; i >= 0; i--) {
     if (obj.data.data[i].ad_info != null) {
@@ -13,8 +14,4 @@ if (obj.data.data) {
     }
   }
 }
-var obj2 = JSON.stringify(obj);
-var new_response = obj2.replace(/\"cell_id\":\d+,\"cell_id_str\":\"(\d+)\"/g,'\"cell_id\":$1,\"cell_id_str\":\"$1\"');
-let reg = /\\/g;
-let replaceAfter = new_response.replace(reg,'');
-$done({body: JSON.stringify(replaceAfter)});
+$done({body: JSON.stringify(obj)});
