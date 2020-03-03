@@ -14,5 +14,6 @@ if (obj.data.data) {
   }
 }
 var obj2 = JSON.stringify(obj);
-var body = obj2.replace(/\"cell_id\":\d+,\"cell_id_str\":\"(\d+)\"/g,'\"cell_id\":$1,\"cell_id_str\":\"$1\"');
+var obj3 = obj2.replace(/\"cell_id\":\d+,\"cell_id_str\":\"(\d+)\"/g,'\"cell_id\":$1,\"cell_id_str\":\"$1\"');
+var body = obj3.replace(/\"item_id\":\d+,\"item_id_str\":\"(\d+)\"/g,'\"item_id\":$1,\"item_id_str\":\"$1\"');
 $done({body});
