@@ -5,10 +5,5 @@ http-response ^https?:\/\/.+\.(snssdk|amemv)\.com\/api\/ad\/ script-path= https:
 [MITM]
 hostname = *.snssdk.com
 */
-var body = $response.body;
-var url = $request.url;
-const path = "/api/ad";
-if (url.indexOf(path) != -1) {
-  body = '{"data":null,"code":0,"message":"success"}';
- }
+var body = '{"data":null,"code":0,"message":"success"}';
 $done({body});
