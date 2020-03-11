@@ -5,10 +5,4 @@ http-response ^https?:\/\/.+\.(snssdk|amemv)\.com\/api\/ad\/ script-path= https:
 [MITM]
 hostname = *.snssdk.com
 */
-var data = {
-  body: "{}",
-  headers: {
-    "Content-Type": "application/json"
-  }
-};
-$done({response: data});
+$done();
