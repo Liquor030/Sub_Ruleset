@@ -6,7 +6,7 @@ http-response ^https?:\/\/.+\.(snssdk|amemv)\.com\/api\/ad\/ script-path= https:
 hostname = *.snssdk.com
 */
 var data = {
-  body: "{"data":null,"code":0,"message":"success"}",
+  body: "{}",
   headers: {
     "Content-Type": "application/json"
   }
