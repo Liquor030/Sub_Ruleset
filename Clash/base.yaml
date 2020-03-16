@@ -54,11 +54,9 @@ dns:
   enhanced-mode: redir-host
   nameserver:
     - 119.29.29.29
-    - 114.114.114.114
+    - 119.28.28.28
   fallback:
-    - 202.141.162.123:5353
-    - 202.38.93.153:5353
-    - 202.141.178.13:5353
+    - https://i.233py.com/dns-query
     
 # Clash for Windows
 cfw-bypass:
