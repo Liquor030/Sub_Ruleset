@@ -5,5 +5,5 @@ http-response ^https?:\/\/.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-s
 hostname = *.snssdk.com
 */
 var body = $response.body.replace(/{\"cell_type\":2.*?_info\":null},?/g,'');
-body = $response.body.replace(/(\"video_download\":.*?\"url_list\":\[)(.*?)(\].*?\"video_high\":.*?\"url_list\":\[)(.*?)(\])/g,'$1$4$3$4$5');
+body = body.replace(/(\"video_download\":.*?\"url_list\":\[)(.*?)(\].*?\"video_high\":.*?\"url_list\":\[)(.*?)(\])/g,'$1$4$3$4$5');
 $done({body});
