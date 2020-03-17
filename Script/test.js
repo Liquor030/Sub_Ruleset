@@ -5,6 +5,7 @@ http-response ^https?://.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-siz
 hostname = *.snssdk.com
 */
 var obj = $response.body.replace(/{\"cell_type\":2.*?_info\":null},?/g,'');
+obj = obj.replace(/\"can_download\":(false|null)/g,'\"can_download\":true');
 obj = obj.replace(/tplv-ppx-logo.image/g,'0x0.gif');
 var body = obj.replace(/tplv-ppx-logo/g,'0x0');
 $done({body});
