@@ -1,23 +1,9 @@
-let body= $response.body;
-var obj = JSON.parse(body);
-if (body.indexOf("expires") !=-1) {
-  obj["receipt"]["in_app"][0]["purchase_date"] = "2021-03-07 15:39:18 Etc/GMT";
-  obj["receipt"]["in_app"][0]["purchase_date_ms"] = "1615131558";
-  obj["receipt"]["in_app"][0]["purchase_date_pst"] = "2021-03-07 08:39:18 Etc/GMT";
-  obj["receipt"]["in_app"][0]["original_purchase_date"] = "2021-03-07 15:39:19 Etc/GMT";
-  obj["receipt"]["in_app"][0]["original_purchase_date_ms"] = "1615131559";
-  obj["receipt"]["in_app"][0]["original_purchase_date_pst"] = "2021-03-07 08:39:19 America/Los_Angeles";
-  obj["receipt"]["in_app"][0]["expires_date"] = "2099-10-19 05:14:18 Etc/GMT";
-  obj["receipt"]["in_app"][0]["expires_date_pst"] = "2099-10-18 22:14:18 America/Los_Angeles";
-  obj["receipt"]["in_app"][0]["expires_date_ms"] = "4096019658000";
-  obj["latest_receipt_info"][0]["purchase_date"] = "2021-03-07 15:39:18 Etc/GMT";
-  obj["latest_receipt_info"][0]["purchase_date_ms"] = "1615131558";
-  obj["latest_receipt_info"][0]["purchase_date_pst"] = "2021-03-07 08:39:18 Etc/GMT";
-  obj["latest_receipt_info"][0]["original_purchase_date"] = "2021-03-07 15:39:19 Etc/GMT";
-  obj["latest_receipt_info"][0]["original_purchase_date_ms"] = "1615131559";
-  obj["latest_receipt_info"][0]["original_purchase_date_pst"] = "2021-03-07 08:39:19 America/Los_Angeles";
-  obj["latest_receipt_info"][0]["expires_date"] = "2099-10-19 05:14:18 Etc/GMT";
-  obj["latest_receipt_info"][0]["expires_date_pst"] = "2099-10-18 22:14:18 America/Los_Angeles";
-  obj["latest_receipt_info"][0]["expires_date_ms"] = "4096019658000";
-  }
-$done({body: JSON.stringify(obj)});
+/* 去除皮皮虾feed_ad by: Liquor030
+[Script]
+http-response ^https?:\/\/.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
+[MITM]
+hostname = *.snssdk.com
+*/
+var body = $response.body.replace(/{\"cell_type\":2.*?_info\":null},?/g,'');
+body = $response.body.replace(/(\"video_download\":.*?\"url_list\":\[)(.*?)(\].*?\"video_high\":.*?\"url_list\":\[)(.*?)(\])/g,'$1$4$3$4$5');
+$done({body});
