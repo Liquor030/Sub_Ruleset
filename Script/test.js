@@ -1,4 +1,4 @@
-/*修复版  备用
+/*去水印测试
 [Script]
 http-response ^https?://.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
 [MITM]
