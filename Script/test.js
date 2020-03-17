@@ -8,7 +8,7 @@ var obj = JSON.parse($response.body);
 if (obj.data.data) {
   for (var i = obj.data.data.length - 1; i >= 0; i--) {
     if (obj.data.data[i].item.video != null) {
-      obj.data.data[i].item.video.video_download.url_list = obj.data.data[i].item.video.video_high.url_list
+      obj.data.data[i].item.video.video_download = obj.data.data[i].item.video.video_high
     }
     if (obj.data.data[i].ad_info != null) {
       obj.data.data.splice(i, 1);
