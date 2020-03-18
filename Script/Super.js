@@ -1,4 +1,4 @@
-/*by Liquor030 Remove Super's Ad & Logo
+/*Remove Super's Ad & Logo by Liquor030
 =====================================
 Feed: /feed/stream
 回复: /comment/cell_reply
