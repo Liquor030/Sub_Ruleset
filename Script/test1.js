@@ -18,7 +18,7 @@ if (obj.data.data) {
 }
 
 if (c != null) {
-    for (var i = c.length - 1; i >= 0; i--) {
+    for (var i in c) {
         if (c[i].ad_info != null) {
             c.splice(i, 1);
         }
@@ -26,7 +26,7 @@ if (c != null) {
             if (c[i].item.video != null) {
                 c[i].item.video.video_download.url_list = c[i].item.origin_video_download.url_list;
             }
-            for (var j = c[i].item.comments.length - 1; j >= 0; j--) {
+            for (var j in c[i].item.comments) {
                 if (c[i].item.comments[j].video != null) {
                     c[i].item.comments[j].video_download.url_list = c[i].item.comments[j].video.url_list;
                 }
