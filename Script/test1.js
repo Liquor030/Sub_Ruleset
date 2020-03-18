@@ -1,6 +1,15 @@
 /*by Liquor remove Super's ad & logo
+feed: bds/feed/stream
+回复: bds/comment/cell_reply
+评论: bds/cell/cell_comment
+用户插眼: bds/ward/list
+用户收藏: bds/user/favorite
+用户评论: bds/user/cell_coment
+用户feed: bds/user/cell_userfeed
+用户发帖: bds/user/publish_list
+自行选择使用的范围
 [Script]
-http-response ^https?://.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
+http-response ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
 [MITM]
 hostname = *.snssdk.com
 */
