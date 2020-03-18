@@ -41,17 +41,17 @@ if (c instanceof Array) {
         }
     }
 } else {
-    if (c.comment_info != null) {
-        if (c.item != null) {
-            if (c.item.video != null) {
-                c.item.video.video_download.url_list = c.item.origin_video_download.url_list;
-            }
-            for (var j in c.item.comments) {
-                if (c.item.comments[j].video != null) {
-                    c.item.comments[j].video_download.url_list = c.item.comments[j].video.url_list;
-                }
+    if (c[i].item != null) {
+        if (c[i].item.video != null) {
+            c[i].item.video.video_download.url_list = c[i].item.origin_video_download.url_list;
+        }
+        for (var j in c[i].item.comments) {
+            if (c[i].item.comments[j].video != null) {
+                c[i].item.comments[j].video_download.url_list = c[i].item.comments[j].video.url_list;
             }
         }
+    }
+    if (c.comment_info != null) {
         if (c.comment_info.video != null) {
             c.comment_info.video_download.url_list = c.comment_info.video.url_list;
         }
@@ -62,4 +62,6 @@ obj = obj.replace(/:\"(\d{19})str\"/g, ':$1');
 obj = obj.replace(/\"can_download\":false/g, '\"can_download\":true');
 obj = obj.replace(/tplv-ppx-logo.image/g, '0x0.gif');
 var body = obj.replace(/tplv-ppx-logo/g, '0x0');
-$done({body});
+$done({
+    body
+});
