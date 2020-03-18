@@ -41,13 +41,13 @@ if (c instanceof Array) {
         }
     }
 } else {
-    if (c[i].item != null) {
-        if (c[i].item.video != null) {
-            c[i].item.video.video_download.url_list = c[i].item.origin_video_download.url_list;
+    if (c.item != null) {
+        if (c.item.video != null) {
+            c.item.video.video_download.url_list = c.item.origin_video_download.url_list;
         }
-        for (var j in c[i].item.comments) {
-            if (c[i].item.comments[j].video != null) {
-                c[i].item.comments[j].video_download.url_list = c[i].item.comments[j].video.url_list;
+        for (var j in c.item.comments) {
+            if (c.item.comments[j].video != null) {
+                c.item.comments[j].video_download.url_list = c.item.comments[j].video.url_list;
             }
         }
     }
