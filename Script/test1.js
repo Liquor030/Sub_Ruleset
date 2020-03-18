@@ -1,4 +1,4 @@
-/*by Liquor remove Super's ad & logo
+/*by Liquor Remove Super's Ad & Logo
 feed: bds/feed/stream
 回复: bds/comment/cell_reply
 评论: bds/cell/cell_comment
@@ -13,64 +13,63 @@ http-response ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell
 [MITM]
 hostname = *.snssdk.com
 */
-var obj = $response.body.replace(/:(\d{19})/g, ':\"$1str\"');
-obj = JSON.parse(obj);
-var c;
-if (obj.data.data) {
-    c = obj.data.data;
-} else if (obj.data.replies) {
-    c = obj.data.replies;
-} else if (obj.data.cell_comments) {
-    c = obj.data.cell_comments;
+var body = $response.body.replace(/:(\d{19})/g, ':\"$1str\"');
+body = JSON.parse(body);
+if (body.data.data) {
+    obj = body.data.data;
+} else if (body.data.replies) {
+    obj = body.data.replies;
+} else if (body.data.cell_comments) {
+    obj = body.data.cell_comments;
 } else {
-    c = null;
+    obj = null;
 }
 
-if (c instanceof Array) {
-    if (c != null) {
-        for (var i in c) {
-            if (c[i].ad_info != null) {
-                c.splice(i, 1);
+if (obj instanceof Array) {
+    if (obj != null) {
+        for (var i in obj) {
+            if (obj[i].ad_info != null) {
+                obj.splice(i, 1);
             }
-            if (c[i].item != null) {
-                if (c[i].item.video != null) {
-                    c[i].item.video.video_download.url_list = c[i].item.origin_video_download.url_list;
+            if (obj[i].item != null) {
+                if (obj[i].item.video != null) {
+                    obj[i].item.video.video_download.url_list = obj[i].item.origin_video_download.url_list;
                 }
-                for (var j in c[i].item.comments) {
-                    if (c[i].item.comments[j].video != null) {
-                        c[i].item.comments[j].video_download.url_list = c[i].item.comments[j].video.url_list;
+                for (var j in obj[i].item.comments) {
+                    if (obj[i].item.comments[j].video != null) {
+                        obj[i].item.comments[j].video_download.url_list = obj[i].item.comments[j].video.url_list;
                     }
                 }
             }
-            if (c[i].comment_info != null) {
-                if (c[i].comment_info.video != null) {
-                    c[i].comment_info.video_download.url_list = c[i].comment_info.video.url_list;
+            if (obj[i].comment_info != null) {
+                if (obj[i].comment_info.video != null) {
+                    obj[i].comment_info.video_download.url_list = obj[i].comment_info.video.url_list;
                 }
             }
         }
     }
 } else {
-    if (c.item != null) {
-        if (c.item.video != null) {
-            c.item.video.video_download.url_list = c.item.origin_video_download.url_list;
+    if (obj.item != null) {
+        if (obj.item.video != null) {
+            obj.item.video.video_download.url_list = obj.item.origin_video_download.url_list;
         }
-        for (var j in c.item.comments) {
-            if (c.item.comments[j].video != null) {
-                c.item.comments[j].video_download.url_list = c.item.comments[j].video.url_list;
+        for (var j in obj.item.comments) {
+            if (obj.item.comments[j].video != null) {
+                obj.item.comments[j].video_download.url_list = obj.item.comments[j].video.url_list;
             }
         }
     }
-    if (c.comment_info != null) {
-        if (c.comment_info.video != null) {
-            c.comment_info.video_download.url_list = c.comment_info.video.url_list;
+    if (obj.comment_info != null) {
+        if (obj.comment_info.video != null) {
+            obj.comment_info.video_download.url_list = obj.comment_info.video.url_list;
         }
     }
 }
-obj = JSON.stringify(obj);
-obj = obj.replace(/:\"(\d{19})str\"/g, ':$1');
-obj = obj.replace(/\"can_download\":false/g, '\"can_download\":true');
-obj = obj.replace(/tplv-ppx-logo.image/g, '0x0.gif');
-var body = obj.replace(/tplv-ppx-logo/g, '0x0');
+body = JSON.stringify(body);
+body = body.replace(/:\"(\d{19})str\"/g, ':$1');
+body = body.replace(/\"can_download\":false/g, '\"can_download\":true');
+body = body.replace(/tplv-ppx-logo.image/g, '0x0.gif');
+body = body.replace(/tplv-ppx-logo/g, '0x0');
 $done({
     body
 });
