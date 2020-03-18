@@ -6,6 +6,7 @@ hostname = *.snssdk.com
 */
 var obj = $response.body.replace(/:(\d{19})/g, ':\"$1str\"');
 obj = JSON.parse(obj);
+
 var c;
 if (obj.data.data) {
     c = obj.data.data;
@@ -17,31 +18,41 @@ if (obj.data.data) {
     c = null;
 }
 
-if (c != null) {
-    for (var i in c) {
-        if (c[i].ad_info != null) {
-            c.splice(i, 1);
-        }
-        if (c[i].item != null) {
-            if (c[i].item.video != null) {
-                c[i].item.video.video_download.url_list = c[i].item.origin_video_download.url_list;
+if (c instanceof Array) {
+    if (c != null) {
+        for (var i in c) {
+            if (c[i].ad_info != null) {
+                c.splice(i, 1);
             }
-            for (var j in c[i].item.comments) {
-                if (c[i].item.comments[j].video != null) {
-                    c[i].item.comments[j].video_download.url_list = c[i].item.comments[j].video.url_list;
+            if (c[i].item != null) {
+                if (c[i].item.video != null) {
+                    c[i].item.video.video_download.url_list = c[i].item.origin_video_download.url_list;
+                }
+                for (var j in c[i].item.comments) {
+                    if (c[i].item.comments[j].video != null) {
+                        c[i].item.comments[j].video_download.url_list = c[i].item.comments[j].video.url_list;
+                    }
+                }
+            }
+            if (c[i].comment_info != null) {
+                if (c[i].comment_info.video != null) {
+                    c[i].comment_info.video_download.url_list = c[i].comment_info.video.url_list;
                 }
             }
         }
-        if (c[i].comment_info != null) {
-            if (c[i].comment_info.video != null) {
-                c[i].comment_info.video_download.url_list = c[i].comment_info.video.url_list;
-            }
+    }
+} else {
+    if (c.comment_info != null) {
+        if (c.comment_info.video != null) {
+            c.comment_info.video_download.url_list = c.comment_info.video.url_list;
         }
     }
 }
+
 obj = JSON.stringify(obj);
 obj = obj.replace(/:\"(\d{19})str\"/g, ':$1');
 obj = obj.replace(/\"can_download\":false/g, '\"can_download\":true');
 obj = obj.replace(/tplv-ppx-logo.image/g, '0x0.gif');
 var body = obj.replace(/tplv-ppx-logo/g, '0x0');
+
 $done({body});
