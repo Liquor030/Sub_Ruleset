@@ -1,6 +1,5 @@
 /*by Liquor030 Remove Super's Ad & Logo
 =====================================
-自行选择范围：
 Feed: /feed/stream
 回复: /comment/cell_reply
 评论: /cell/cell_comment
