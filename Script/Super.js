@@ -1,4 +1,4 @@
-/*by Liquor Remove Super's Ad & Logo
+/*by Liquor030 Remove Super's Ad & Logo
 =====================================
 自行选择范围：
 Feed: /feed/stream
