@@ -1,4 +1,5 @@
 # DOMAIN
+DOMAIN,unidesk.alicdn.com
 DOMAIN,adashxgc.ut.taobao.com
 # URL-REGEX
 URL-REGEX,^https?:\/\/(api|www)\.zhihu\.com\/(adx|sc-profiler|ab)
