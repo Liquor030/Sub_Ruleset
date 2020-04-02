@@ -1,1 +1,1 @@
-URL-REGEX,https?://(api|wwww).zhihu.com/(adx|sc-profiler|ab)
+URL-REGEX,^https?://(api|wwww).zhihu.com/(adx|sc-profiler|ab)
