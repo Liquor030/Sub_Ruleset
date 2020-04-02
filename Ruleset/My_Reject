@@ -5,8 +5,6 @@ DOMAIN,adashxgc.ut.taobao.com
 URL-REGEX,^https?:\/\/(api|www)\.zhihu\.com\/(adx|sc-profiler|ab)
 URL-REGEX,^https?:\/\/.+\/eapi\/ad
 
-URL-REGEX,^https?:\/\/iadmusicmat\.music.126.net\/.*jpg$
-URL-REGEX,^https?:\/\/p\.c\.music\.126.net\/.*jpg$
 URL-REGEX,^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*
 URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+(&oad|ctier)
 URL-REGEX,^https?:\/\/shimo\.im\/api\/ads\?(.+)
@@ -132,7 +130,6 @@ URL-REGEX,^https?:\/\/img1\.126\.net\/channel14\/
 URL-REGEX,^https?:\/\/mimg\.127\.net\/external\/smartpop-manger\.min\.js
 URL-REGEX,^https?:\/\/nex\.163\.com\/q
 URL-REGEX,^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+?&product=adpublish
-URL-REGEX,^https?:\/\/p[^4](c)?\.music\.126\.net\/\w+==\/10995\d{13}\.jpg$
 URL-REGEX,^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\?
 URL-REGEX,^https?:\/\/.+\/client?functionId=lauch\/lauchConfig&appName=paidaojia
 URL-REGEX,^https?:\/\/111\.13\.29\.201\/client\.action\?functionId=start
@@ -716,7 +713,6 @@ URL-REGEX,^https?:\/\/p\d\.meituan\.net\/wmbanner\/
 URL-REGEX,^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002
 URL-REGEX,^https?:\/\/img\.meituan\.net\/midas\/.*@\d{4}h
 URL-REGEX,^https?:\/\/img\.meituan\.net\/display\/\w+\.jpg\.webp
-URL-REGEX,^https?:\/\/iad.*mat\.music\.12[67]\.net/\w+\.(jpg|mp4)
 URL-REGEX,^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*Animation
 URL-REGEX,^https?:\/\/[\s\S]*\/ting\/[a-z]*\/ts-\d+
 URL-REGEX,^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload)
