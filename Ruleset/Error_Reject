@@ -1,0 +1,2 @@
+DOMAIN-SUFFIX,iadmat.nosdn.127.net
+URL-REGEX,https?://api.zhihu.com/(topstory/hot-lists|search/(top|tabs|preset))
