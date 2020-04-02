@@ -1,5 +1,5 @@
 # DOMAIN
 DOMAIN,adashxgc.ut.taobao.com
 # URL-REGEX
-URL-REGEX,^https?://(api|www).zhihu.com/(adx|sc-profiler|ab)
+URL-REGEX,^https?:\/\/(api|www)\.zhihu\.com\/(adx|sc-profiler|ab)
 URL-REGEX,^https?:\/\/.+\/eapi\/ad
