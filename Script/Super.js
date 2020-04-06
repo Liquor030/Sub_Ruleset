@@ -15,7 +15,7 @@ http-response ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell
 [MITM]
 hostname = *.snssdk.com
 */
-var body = $response.body.replace(/\":([0-9]{15,})/g, '\":\"$1str\"');
+var body = $response.body.replace(/\":([0-9]{15,})/g, '":"$1str"');
 body = JSON.parse(body);
 if (body.data.data) {
     obj = body.data.data;
