@@ -4,15 +4,15 @@ http-response ^https?://.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-siz
 [MITM]
 hostname = *.snssdk.com
 */
-var obj = $response.body.replace(/:(\d{19})/g, ':\"$1str\"');
-obj = JSON.parse(obj);
+var obj = $response.body.replace(/\":([0-9]{15,})/g, '\":\"$1str\"');
+var obj = JSON.parse($response.body);
 if (obj.data.data) {
-    for (var i = obj.data.data.length - 1; i >= 0; i--) {
-        if (obj.data.data[i].ad_info != null) {
-            obj.data.data.splice(i, 1);
-        }
+  for (var i in obj.data.data) {
+    if (obj.data.data[i].ad_info != null) {
+      obj.data.data.splice(i, 1);
     }
+  }
 }
 obj = JSON.stringify(obj);
-obj = obj.replace(/:\"(\d{19})str\"/g, ':$1');
+body = obj.replace(/\":\"([0-9]{15,})str\"/g, '\":$1');
 $done({body});
