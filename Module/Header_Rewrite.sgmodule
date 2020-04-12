@@ -1,0 +1,35 @@
+#!name=Header_Rewrite
+#!desc=对消息头进行重写
+#!system=ios
+
+[Header Rewrite]
+# 赚客
+^https?://www.zuanke8.com header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15"
+
+# 百度
+^*.bdimg.com header-del Referer
+
+# 腾讯
+^*.qpic.cn header-replace User-Agent WeChat/6.5.22.32 CFNetwork/889.9 Darwin/17.2.0
+^*.qpic.cn header-del Referer
+
+# 网易
+^*.ph.126.net header-del Referer
+
+# 知乎
+^*.zhimg.com header-del Referer
+
+# 中文业界资讯站
+^*.cnbetacdn.com header-del Referer
+
+# 至顶网
+^*.zhiding.cn header-del Referer
+
+# C114通信网
+^*.c114.com.cn header-del Referer
+
+# 笔趣阁
+^https?://www.biquge.com.tw header-del Cookie
+
+# 知乎
+^https?://www.zhihu.com/question/ header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.45 Safari/537.36

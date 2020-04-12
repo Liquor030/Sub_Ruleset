@@ -1,0 +1,7 @@
+#!name=Host
+#!desc=本地DNS映射
+#!system=ios
+
+[Host]
+*.kingkong.com.tw = server:https://i.233py.com/dns-query
+*github* = server:https://i.233py.com/dns-query
