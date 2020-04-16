@@ -34,6 +34,7 @@ external-controller: 127.0.0.1:9090
 
 # experimental feature
 experimental:
+  interface-name: WLAN
   ignore-resolve-fail: true # ignore dns resolve fail, default value is true
 
 # authentication of local SOCKS5/HTTP(S) server
@@ -50,7 +51,7 @@ experimental:
 # DNS 设置
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: 127.0.0.1:53
   enhanced-mode: redir-host
   nameserver:
     - 223.5.5.5
