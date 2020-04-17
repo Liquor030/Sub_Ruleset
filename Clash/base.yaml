@@ -51,7 +51,7 @@ experimental:
 # DNS 设置
 dns:
   enable: true
-  listen: 127.0.0.1:53
+  listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
     - 223.5.5.5
