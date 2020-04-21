@@ -1,0 +1,9 @@
+#!name=Remove Super's Ad
+#!desc=去除皮皮虾广告
+#!system=ios
+
+[MITM]
+hostname = %INSERT% *.snssdk.com
+
+# Remove Super's Ad (By Liquor030)
+app_name=super&([\S]*)aid=\d+ app_name=super_pro&$1aid=1412 header

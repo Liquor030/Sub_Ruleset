@@ -53,3 +53,6 @@ hostname = %INSERT% *.snssdk.com
 
 # Remove Super's Ad (By Liquor030)
 app_name=super&([\S]*)aid=\d+ app_name=super_pro&$1aid=1412 header
+
+# Remove News_Article's Ad (By Liquor030)
+app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 header
