@@ -1,5 +1,5 @@
 #!name=Netease Httpdns
-#!desc=查询网易云音乐ip，用于维护 "Netease_Music.list"
+#!desc=用于维护 "Netease_Music.list"
 #!system=ios
 
 [MITM]
