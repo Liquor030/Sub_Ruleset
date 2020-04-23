@@ -1,0 +1,9 @@
+#!name=verifyReceipt
+#!desc=Crack verifyReceipt
+#!system=ios
+
+[MITM]
+hostname = %INSERT% sandbox.itunes.apple.com, buy.itunes.apple.com
+
+[Script]
+verify_receipt.js = type=http-response,pattern="^https?:\/\/(sandbox|buy)\.itunes\.apple\.com\/verifyReceipt",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0
