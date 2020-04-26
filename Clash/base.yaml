@@ -34,7 +34,9 @@ external-controller: 127.0.0.1:9090
 
 # experimental feature
 experimental:
-  interface-name: WLAN
+  {% if exists("request.interface-name") %}
+  interface-name: {{ UrlDecode(request.interface-name) }}
+  {% endif %}
   ignore-resolve-fail: true # ignore dns resolve fail, default value is true
 
 # authentication of local SOCKS5/HTTP(S) server
