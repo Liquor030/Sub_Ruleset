@@ -29,7 +29,7 @@ WeChat.js = type=http-request,pattern="^https?:\/\/mp\.weixin\.qq\.com/mp/getapp
 
 # 抖音短视频 （作者：Choler） hostname =
 Aweme.js = type=http-request,pattern="^https?:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)",script-path=https://Choler.github.io/Surge/Script/Aweme.js,script-update-interval=0
-Aweme.js = type=http-response,pattern="^https?:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)",requires-body=1,max-size=0,script-path=https://Choler.github.io/Surge/Script/Aweme.js,script-update-interval=0
+Aweme.js = type=http-response,pattern="^https?:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)",requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Aweme.js,script-update-interval=0
 
 # 看漫画极速版 （作者：HoGer）hostname =
 kanmanhuajisuban.js = type=http-response,pattern="^https?:\/\/getuserinfo\.321mh\.com\/app_api\/v5\/getuserinfo\/",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/imxh/js/master/kanmanhuajisuban.js,script-update-interval=0
@@ -37,12 +37,12 @@ kanmanhuajisuban.js = type=http-response,pattern="^https?:\/\/getuserinfo\.321mh
 weixinyuedu.js = type=http-response,pattern="^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/imxh/js/master/weixinyuedu.js,script-update-interval=0
 
 # 微博去广告 （作者：yichahucha）hostname = api.weibo.cn,
-wb_launch.js = type=http-response,pattern="^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,script-update-interval=0
-wb_ad.js = type=http-response,pattern="^https?:\/\/m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status)",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,script-update-interval=0
+wb_launch.js = type=http-response,pattern="^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)",requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,script-update-interval=0
+wb_ad.js = type=http-response,pattern="^https?:\/\/m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|\!/photos/pic_recommend_status)",requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,script-update-interval=0
 
 # 微博国际版去广告 （作者：yichahucha）hostname = weibointl.api.weibo.cn, api.weibo.cn
-weibointl_launch.js = type=http-response,pattern="^https?:\/\/weibointl\.api\.weibo\.cn/portal\.php\?a=get_coopen_ads",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hancj0528/Script/master/weibointl_launch.js,script-update-interval=0
-weibointl_timeline.js = type=http-response,pattern="^https?:\/\/api\.weibo\.cn/2/(statuses|groups)/(unread_hot_|friends_)?timeline",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hancj0528/Script/master/weibointl_timeline.js,script-update-interval=0
+weibointl_launch.js = type=http-response,pattern="^https?:\/\/weibointl\.api\.weibo\.cn/portal\.php\?a=get_coopen_ads",requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/hancj0528/Script/master/weibointl_launch.js,script-update-interval=0
+weibointl_timeline.js = type=http-response,pattern="^https?:\/\/api\.weibo\.cn/2/(statuses|groups)/(unread_hot_|friends_)?timeline",requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/hancj0528/Script/master/weibointl_timeline.js,script-update-interval=0
 
 # 毒去广告 （作者：ConnersHua）hostname = m.poizon.com
 com.poizon.js = type=http-response,pattern="^https?:\/\/m\.poizon\.com\/client\/init",requires-body=1,max-size=0,script-path=https://github.com/ConnersHua/Profiles/raw/master/Surge/Script/com.poizon.js,script-update-interval=0
@@ -93,7 +93,7 @@ Kaola.js = type=http-request,pattern="^https?:\/\/sp\.kaola\.com/api/openad$",sc
 QQNews.js = type=http-response,pattern="^https?:\/\/r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList)",requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/QQNews.js,script-update-interval=0
 
 # 今日头条去广告 （作者：Choler）hostname = *.snssdk.com
-Toutiao.js = type=http-response,pattern="^https?:\/\/[\s\S]*\.snssdk\.com/api/news/feed/v88/",requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,script-update-interval=0
+// Toutiao.js = type=http-response,pattern="^https?:\/\/[\s\S]*\.snssdk\.com/api/news/feed/v88/",requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,script-update-interval=0
 
 # 新香蕉视频 （作者：野比）hostname =
 xjsp.js = type=http-response,pattern="https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/)",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js,script-update-interval=0
