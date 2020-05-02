@@ -19,6 +19,7 @@ URL-REGEX,^http://[\s\S]*baidu\.com/.*ad[xs]\.php
 URL-REGEX,^http://c\.tieba\.baidu\.com/c/s/splashSchedule$
 
 # > 哔哩哔哩
+# app.bilibili.com, api.bilibili.com
 DOMAIN,cm.bilibili.com
 DOMAIN,data.bilibili.com
 DOMAIN,miniapp.bilibili.com
@@ -31,6 +32,7 @@ URL-REGEX,^https://app.bilibili.com/x/v2/rank.*rid=(168|5)
 URL-REGEX,^https://api.bilibili.com/pgc/season/rank/cn
 
 # > 滴滴
+# img-ys011.didistatic.com
 URL-REGEX,^https://img-ys011\.didistatic\.com/static/ad_oss/image-\d{4}-\d{4}/
 
 # > 饿了么
@@ -39,17 +41,8 @@ DOMAIN,log.star.ele.me
 # > 高德地图
 DOMAIN,optimus-ads.amap.com
 
-# > 头条系
-URL-REGEX,^https?://.*?\.((snssdk|amemv)\.com|musical\.ly)/(api|motor)/ad/
-URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/aweme/stats/
-URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/device/update/
-URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/screen/ad/
-URL-REGEX,^https?://aweme\.snssdk\.com/service/1/app_logout/
-URL-REGEX,^https?://aweme\.snssdk\.com/service/2/app_log
-URL-REGEX,^https?://frontier\.snssdk\.com/
-URL-REGEX,^https?://.*?\.snssdk\.com/motor/operation/activity/display/config/V2/
-
 # >> 网易云
+# interfac?.music.163.com
 DOMAIN,ad.bn.netease.com
 DOMAIN,ad.yixin.im
 DOMAIN,iadmusicmat.music.126.net
@@ -66,17 +59,30 @@ DOMAIN,rd.da.netease.com
 DOMAIN,wr.da.netease.com
 DOMAIN,yt-adp.nosdn.127.net
 AND,((OR,((USER-AGENT,NeteaseMusic*),(USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*))), (URL-REGEX,^https?://.*?/e?api/ad))
-URL-REGEX,^http://iad.*mat\.music\.12[67]\.net/\w+\.(jpg|mp4)$
+
+# > 掌阅
+# webboot.zhangyue.com
+DOMAIN,saad.ms.zhangyue.net
+URL-REGEX,^https?://webboot\.zhangyue\.com.*?(/ad/|/pop/|DrivenPop)
 
 # > 知乎
+# api.zhihu.com
 DOMAIN,mqtt.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN-SUFFIX,xdrig.com
 URL-REGEX,^https://api.zhihu.com/(adx/|ab/api|fringe/ad|real_time|ad-style-service|banners|market/popover|mqtt|me|.*launch|.*featured-comment-ad)
 
-#掌阅
-DOMAIN,saad.ms.zhangyue.net
-URL-REGEX,^https?://webboot\.zhangyue\.com.*?(/ad/|/pop/|DrivenPop)
+# > 字节跳动
+# *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
+URL-REGEX,^https?://.*?\.((snssdk|amemv)\.com|musical\.ly)/(api|motor)/ad/
+URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/aweme/stats/
+URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/device/update/
+URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/screen/ad/
+URL-REGEX,^https?://aweme\.snssdk\.com/service/1/app_logout/
+URL-REGEX,^https?://aweme\.snssdk\.com/service/2/app_log
+URL-REGEX,^https?://frontier\.snssdk\.com/
+URL-REGEX,^https?://.*?\.snssdk\.com/motor/operation/activity/display/config/V2/
+URL-REGEX,^https?://.*?\.pstatp\.com/((obj|img)/ad|inapp/TTAdblock\.css)
 
 # 视频类
 # > 爱奇艺 & PPS
