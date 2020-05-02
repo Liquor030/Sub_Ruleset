@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% pan.baidu.com, api.termius.com, u.kanghuayun.com, *.googlevideo.com, mp.weixin.qq.com, *.amemv.com, getuserinfo.321mh.com, i.weread.qq.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, m.poizon.com, api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, getuserinfo-globalapi.zymk.cn, ctrl.playcvn.com, api.rr.tv, *.qidian.com, nmb.fastmirror.org, *.snssdk.com, ios.prod.ftl.netflix.com, sp.kaola.com, r.inews.qq.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
+hostname = %INSERT% pan.baidu.com, api.termius.com, u.kanghuayun.com, *.googlevideo.com, mp.weixin.qq.com, *.amemv.com, getuserinfo.321mh.com, i.weread.qq.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, m.poizon.com, api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, getuserinfo-globalapi.zymk.cn, ctrl.playcvn.com, api.rr.tv, nmb.fastmirror.org, *.snssdk.com, ios.prod.ftl.netflix.com, sp.kaola.com, r.inews.qq.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
 
 [Script]
 # sanbox verifyReceipt
@@ -69,9 +69,6 @@ YYeTs.js = type=http-response,pattern="^https?:\/\/ctrl.playcvn.com/app/(init|ad
 
 # 人人视频去广告+原画 （作者：popeyelau）hostname = api.rr.tv
 rrtv.js = type=http-response,pattern="^https?:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll)",script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js,script-update-interval=0
-
-# 起点APP去启动广告 （作者：LarkinZero）hostname =
-qidian_anti_ad.js = type=http-response,pattern="^https?:\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen\?localLabels=100",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/LarkinZero/Surge/master/qidian_anti_ad.js,script-update-interval=0
 
 # A岛去帖内广告 （作者：LarkinZero）hostname =
 nmb_no_ad.js = type=http-response,pattern="^https?:\/\/nmb\.fastmirror\.org\/Api\/thread.*",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/LarkinZero/Surge/master/nmb_no_ad.js,script-update-interval=0

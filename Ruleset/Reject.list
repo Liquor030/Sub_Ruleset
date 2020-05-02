@@ -1,4 +1,8 @@
-# MitM: app.bilibili.com, api.bilibili.com, webboot.zhangyue.com
+# MitM: app.bilibili.com, api.bilibili.com, img-ys011.didistatic.com, *.if.qidian.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
+
+# > QQ音乐
+DOMAIN,ad.tencentmusic.com
+DOMAIN,adstats.tencentmusic.com
 
 # > 百度
 DOMAIN-SUFFIX,baidustatic.com
@@ -41,7 +45,11 @@ DOMAIN,log.star.ele.me
 # > 高德地图
 DOMAIN,optimus-ads.amap.com
 
-# >> 网易云
+# > 起点
+# *.if.qidian.com
+URL-REGEX,^https?://.*?\.if\.qidian\.com/.*?client/getsplash
+
+# > 网易云
 # interfac?.music.163.com
 DOMAIN,ad.bn.netease.com
 DOMAIN,ad.yixin.im
