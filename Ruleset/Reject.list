@@ -1,4 +1,4 @@
-# MitM: app.bilibili.com, api.bilibili.com, img-ys011.didistatic.com, *.if.qidian.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
+# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, *.if.qidian.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
 
 # > QQ音乐
 DOMAIN,ad.tencentmusic.com
@@ -35,6 +35,11 @@ URL-REGEX,^https:\/\/app.bilibili.com\/x\/v2\/search\/(defaultword|hot|recommend
 URL-REGEX,^https:\/\/app.bilibili.com\/x\/v2\/rank.*rid=(168|5)
 URL-REGEX,^https:\/\/api.bilibili.com\/pgc\/season\/rank\/cn
 
+# > 超级课程表
+# apis.dongtu.com
+URL-REGEX,^https?:\/\/apis\.dongtu\.com.*?/ad/
+AND,((USER-AGENT,*SuperFriday*), (URL-REGEX,https?:\/\/.*?\/(splash|d\/json|ss\.html)))
+
 # > 滴滴
 # img-ys011.didistatic.com
 URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
@@ -44,6 +49,12 @@ DOMAIN,log.star.ele.me
 
 # > 高德地图
 DOMAIN,optimus-ads.amap.com
+
+# > 金山词霸
+URL-REGEX,^https?:\/\/service\.iciba\.com\/popo
+
+# > 晋江小说阅读
+URL-REGEX,^https?:\/\/app\.jjwxc\.net\/.*?getAd
 
 # > 起点
 # *.if.qidian.com
@@ -79,6 +90,10 @@ DOMAIN,mqtt.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN-SUFFIX,xdrig.com
 URL-REGEX,^https:\/\/api.zhihu.com\/(adx\/|ab\/api|fringe\/ad|real_time|ad-style-service|banners|market\/popover|mqtt|me\/|.*launch|.*featured-comment-ad|.*recommendations)
+
+# > 中国大学慕课
+# www.icourse163.org
+URL-REGEX,^https?:\/\/www\.icourse163\.org\/.*?Recommend
 
 # > 字节跳动
 # *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
