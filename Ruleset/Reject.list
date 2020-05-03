@@ -78,7 +78,7 @@ URL-REGEX,^https?:\/\/webboot\.zhangyue\.com.*?(\/ad\/|\/pop\/|DrivenPop)
 DOMAIN,mqtt.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN-SUFFIX,xdrig.com
-URL-REGEX,^https:\/\/api.zhihu.com\/(adx\/|ab\/api|fringe\/ad|real_time|ad-style-service|banners|market\/popover|mqtt|me|.*launch|.*featured-comment-ad|.*recommendations)
+URL-REGEX,^https:\/\/api.zhihu.com\/(adx\/|ab\/api|fringe\/ad|real_time|ad-style-service|banners|market\/popover|mqtt|me\/|.*launch|.*featured-comment-ad|.*recommendations)
 
 # > 字节跳动
 # *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
