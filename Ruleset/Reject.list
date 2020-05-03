@@ -394,9 +394,10 @@ DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
 
 DOMAIN,ulogs.umeng.com
-DOMAIN,ulogs.umengcloud.com
-DOMAIN,alogs.umeng.co
 DOMAIN,alogs.umeng.com
+DOMAIN,alogs.umeng.co
+DOMAIN,ulogs.umengcloud.com
+DOMAIN,alogs.umengcloud.com
 
 DOMAIN-SUFFIX,0.r.msn.com
 DOMAIN-SUFFIX,000dn.com
