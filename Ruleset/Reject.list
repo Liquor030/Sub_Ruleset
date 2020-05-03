@@ -19,8 +19,8 @@ DOMAIN,offnavi.map.baidu.com
 DOMAIN,newvector.map.baidu.com
 DOMAIN,ulog.imap.baidu.com
 DOMAIN,newloc.map.n.shifen.com
-URL-REGEX,^http://[\s\S]*baidu\.com/.*ad[xs]\.php
-URL-REGEX,^http://c\.tieba\.baidu\.com/c/s/splashSchedule$
+URL-REGEX,^http:\/\/[\s\S]*baidu\.com\/.*ad[xs]\.php
+URL-REGEX,^http:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule$
 
 # > 哔哩哔哩
 # app.bilibili.com, api.bilibili.com
@@ -28,16 +28,16 @@ DOMAIN,cm.bilibili.com
 DOMAIN,data.bilibili.com
 DOMAIN,miniapp.bilibili.com
 DOMAIN,thirdparty.biliapi.com
-URL-REGEX,^https://app.bilibili.com/x/v2/param
-URL-REGEX,^https://app.bilibili.com/x/resource/abtest
-URL-REGEX,http://app.bilibili.com/x/v2/dataflow/report-TINYGIF
-URL-REGEX,^https://app.bilibili.com/x/v2/search/(defaultword|hot|recommend|resource)
-URL-REGEX,^https://app.bilibili.com/x/v2/rank.*rid=(168|5)
-URL-REGEX,^https://api.bilibili.com/pgc/season/rank/cn
+URL-REGEX,^https:\/\/app.bilibili.com\/x\/v2\/param
+URL-REGEX,^https:\/\/app.bilibili.com\/x\/resource\/abtest
+URL-REGEX,http:\/\/app.bilibili.com\/x\/v2\/dataflow\/report-TINYGIF
+URL-REGEX,^https:\/\/app.bilibili.com\/x\/v2\/search\/(defaultword|hot|recommend|resource)
+URL-REGEX,^https:\/\/app.bilibili.com\/x\/v2\/rank.*rid=(168|5)
+URL-REGEX,^https:\/\/api.bilibili.com\/pgc\/season\/rank\/cn
 
 # > 滴滴
 # img-ys011.didistatic.com
-URL-REGEX,^https://img-ys011\.didistatic\.com/static/ad_oss/image-\d{4}-\d{4}/
+URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
 
 # > 饿了么
 DOMAIN,log.star.ele.me
@@ -47,7 +47,7 @@ DOMAIN,optimus-ads.amap.com
 
 # > 起点
 # *.if.qidian.com
-URL-REGEX,^https?://.*?\.if\.qidian\.com/.*?client/getsplash
+URL-REGEX,^https?:\/\/.*?\.if\.qidian\.com\/.*?client\/getsplash
 
 # > 网易云
 # interfac?.music.163.com
@@ -66,31 +66,31 @@ DOMAIN,pr.da.netease.com
 DOMAIN,rd.da.netease.com
 DOMAIN,wr.da.netease.com
 DOMAIN,yt-adp.nosdn.127.net
-AND,((OR,((USER-AGENT,NeteaseMusic*),(USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*))), (URL-REGEX,^https?://.*?/e?api/ad))
+AND,((OR,((USER-AGENT,NeteaseMusic*),(USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*))), (URL-REGEX,^https?:\/\/.*?\/e?api\/ad))
 
 # > 掌阅
 # webboot.zhangyue.com
 DOMAIN,saad.ms.zhangyue.net
-URL-REGEX,^https?://webboot\.zhangyue\.com.*?(/ad/|/pop/|DrivenPop)
+URL-REGEX,^https?:\/\/webboot\.zhangyue\.com.*?(\/ad\/|\/pop\/|DrivenPop)
 
 # > 知乎
 # api.zhihu.com
 DOMAIN,mqtt.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN-SUFFIX,xdrig.com
-URL-REGEX,^https://api.zhihu.com/(adx/|ab/api|fringe/ad|real_time|ad-style-service|banners|market/popover|mqtt|me|.*launch|.*featured-comment-ad|.*recommendations)
+URL-REGEX,^https:\/\/api.zhihu.com\/(adx\/|ab\/api|fringe\/ad|real_time|ad-style-service|banners|market\/popover|mqtt|me|.*launch|.*featured-comment-ad|.*recommendations)
 
 # > 字节跳动
 # *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
-URL-REGEX,^https?://.*?\.((snssdk|amemv)\.com|musical\.ly)/(api|motor)/ad/
-URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/aweme/stats/
-URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/device/update/
-URL-REGEX,^https?://aweme\.snssdk\.com/aweme/v1/screen/ad/
-URL-REGEX,^https?://aweme\.snssdk\.com/service/1/app_logout/
-URL-REGEX,^https?://aweme\.snssdk\.com/service/2/app_log
-URL-REGEX,^https?://frontier\.snssdk\.com/
-URL-REGEX,^https?://.*?\.snssdk\.com/motor/operation/activity/display/config/V2/
-URL-REGEX,^https?://.*?\.pstatp\.com/((obj|img)/ad|inapp/TTAdblock\.css)
+URL-REGEX,^https?:\/\/.*?\.((snssdk|amemv)\.com|musical\.ly)\/(api|motor)\/ad\/
+URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/
+URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/
+URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/
+URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/
+URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log
+URL-REGEX,^https?:\/\/frontier\.snssdk\.com\/
+URL-REGEX,^https?:\/\/.*?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/
+URL-REGEX,^https?:\/\/.*?\.pstatp\.com\/((obj|img)\/ad|inapp\/TTAdblock\.css)
 
 # 视频类
 # > 爱奇艺 & PPS
@@ -129,8 +129,8 @@ DOMAIN-SUFFIX,store.iqiyi.com
 DOMAIN-SUFFIX,t7z.cupid.iqiyi.com
 DOMAIN-SUFFIX,tracker.sns.iqiyi.com
 DOMAIN-SUFFIX,yuedu.iqiyi.com
-URL-REGEX,^https?://.+/videos/other/.+
-URL-REGEX,^https?://paopao\w?.qiyipic.com
+URL-REGEX,^https?:\/\/.+\/videos\/other\/.+
+URL-REGEX,^https?:\/\/paopao\w?.qiyipic.com
 IP-CIDR,101.227.97.240/32,no-resolve
 IP-CIDR,101.227.200.11/32,no-resolve
 IP-CIDR,101.227.200.28/32,no-resolve
@@ -195,7 +195,7 @@ IP-CIDR,223.87.182.101/32,no-resolve
 IP-CIDR,223.87.182.102/32,no-resolve
 IP-CIDR,223.87.182.11/32,no-resolve
 IP-CIDR,223.87.182.52/32,no-resolve
-URL-REGEX,^https?://.+.atm.youku.com
+URL-REGEX,^https?:\/\/.+.atm.youku.com
 
 # > 芒果TV
 DOMAIN-SUFFIX,ads-api.videojj.com
@@ -290,7 +290,7 @@ DOMAIN-SUFFIX,jp.as.pptv.com
 DOMAIN-SUFFIX,pp2.pptv.com
 DOMAIN-SUFFIX,stat.pptv.com
 DOMAIN-SUFFIX,static.g.pptv.com
-URL-REGEX,^https?://img\w.g.pptv.com
+URL-REGEX,^https?:\/\/img\w.g.pptv.com
 
 # > Site
 DOMAIN-SUFFIX,deliver.ifeng.com
@@ -298,7 +298,7 @@ DOMAIN-SUFFIX,hxjs.tool.hexun.com
 DOMAIN-SUFFIX,hxsame.hexun.com
 DOMAIN-SUFFIX,itv.hexun.com
 DOMAIN-SUFFIX,utrack.hexun.com
-URL-REGEX,^https?://h\w{2}.hxsame.hexun.com
+URL-REGEX,^https?:\/\/h\w{2}.hxsame.hexun.com
 
 # > Vod
 DOMAIN-SUFFIX,ad.cmvideo.cn
@@ -8344,26 +8344,26 @@ DOMAIN-SUFFIX,zzy1.quyaoya.com
 DOMAIN-SUFFIX,zzz7.52896368.com
 DOMAIN-SUFFIX,zzzzz4.52896368.com
 
-URL-REGEX,^https?://(e|m).+/((uu|oo).php.+|\d+.x?html\?$)
-URL-REGEX,^https?://[^(apple|10010)]+.(com|cn)/(a|A)d(s|v)?(/|.js)
-URL-REGEX,^https?://[^bbs].tianya\.cn
-URL-REGEX,^https?://\w.?up.qingdaonews.com
-URL-REGEX,^https?://\w{6}.com1.z0.glb.clouddn.com
-URL-REGEX,^https?://\w{8}.logic.cpm.cm.kankan.com
-URL-REGEX,^https?://\w+.cloudfront.net/banner
-URL-REGEX,^https?://\w+.gdt.qq.com
-URL-REGEX,^https?://\w+.kingsoft-office-service.com
-URL-REGEX,^https?://9377\w{2}.com
-URL-REGEX,^https?://a0b\w{2}.com
-URL-REGEX,^https?://(a?d|sax)\d.sina.com
-URL-REGEX,^https?://d\d.sinaimg.cn
-URL-REGEX,^https?://dl.app.gtja.com/.+\d+.jpg$
-URL-REGEX,^https?://impservice.+?youdao.com
-URL-REGEX,^https?://notice.send-anywhere.com/banner
-URL-REGEX,^https?://sax\w?.sina.cn
-URL-REGEX,^https?://sax\w?.sina.com.cn
-URL-REGEX,^https?://server-\w+.imrworldwide.com
-URL-REGEX,^https?://www.bldimg.com/(background|splash)/.+.png$
+URL-REGEX,^https?:\/\/(e|m).+\/((uu|oo).php.+|\d+.x?html\?$)
+URL-REGEX,^https?:\/\/[^(apple|10010)]+.(com|cn)\/(a|A)d(s|v)?(\/|.js)
+URL-REGEX,^https?:\/\/[^bbs].tianya\.cn
+URL-REGEX,^https?:\/\/\w.?up.qingdaonews.com
+URL-REGEX,^https?:\/\/\w{6}.com1.z0.glb.clouddn.com
+URL-REGEX,^https?:\/\/\w{8}.logic.cpm.cm.kankan.com
+URL-REGEX,^https?:\/\/\w+.cloudfront.net\/banner
+URL-REGEX,^https?:\/\/\w+.gdt.qq.com
+URL-REGEX,^https?:\/\/\w+.kingsoft-office-service.com
+URL-REGEX,^https?:\/\/9377\w{2}.com
+URL-REGEX,^https?:\/\/a0b\w{2}.com
+URL-REGEX,^https?:\/\/(a?d|sax)\d.sina.com
+URL-REGEX,^https?:\/\/d\d.sinaimg.cn
+URL-REGEX,^https?:\/\/dl.app.gtja.com\/.+\d+.jpg$
+URL-REGEX,^https?:\/\/impservice.+?youdao.com
+URL-REGEX,^https?:\/\/notice.send-anywhere.com\/banner
+URL-REGEX,^https?:\/\/sax\w?.sina.cn
+URL-REGEX,^https?:\/\/sax\w?.sina.com.cn
+URL-REGEX,^https?:\/\/server-\w+.imrworldwide.com
+URL-REGEX,^https?:\/\/www.bldimg.com\/(background|splash)\/.+.png$
 
 IP-CIDR,1.3.0.10/32,no-resolve
 IP-CIDR,10.72.25.0/24,no-resolve
