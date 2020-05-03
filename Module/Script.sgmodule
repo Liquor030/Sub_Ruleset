@@ -60,15 +60,15 @@ Zhihu.js = type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(moments\?(ac
 // surge%20zhihu%20market.js = type=http-response,pattern=https://api.zhihu.com/market/header,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20market.js,script-update-interval=0
 
 # 哔哩哔哩去广告 （作者：onewayticket255）hostname = app.bilibili.com, api.bilibili.com,
-surge%20bilibili%20tab.js = type=http-response,pattern=^https?:\/\/app.bilibili.com/x/resource/show/tab\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js,script-update-interval=0
+surge%20bilibili%20tab.js = type=http-response,pattern=^https?:\/\/app.bilibili.com/x/resource/show/tab\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js,script-update-interval=0
 
-surge%20bilibili%20feed.js = type=http-response,pattern=^https?:\/\/app.bilibili.com/x/v2/feed/index\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js,script-update-interval=0
+surge%20bilibili%20feed.js = type=http-response,pattern=^https?:\/\/app.bilibili.com/x/v2/feed/index\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js,script-update-interval=0
 
-surge%20bilibili%20view%20relate.js = type=http-response,pattern=^https?:\/\/app.bilibili.com/x/v2/view\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js,script-update-interval=0
+surge%20bilibili%20view%20relate.js = type=http-response,pattern=^https?:\/\/app.bilibili.com/x/v2/view\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js,script-update-interval=0
 
-surge%20bilibili%20reply.js = type=http-response,pattern=^https?:\/\/api.bilibili.com/x/v2/reply/main\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js,script-update-interval=0
+surge%20bilibili%20reply.js = type=http-response,pattern=^https?:\/\/api.bilibili.com/x/v2/reply/main\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js,script-update-interval=0
 
-surge%20bilibili%20live.js = type=http-response,pattern=^https?:\/\/api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js,script-update-interval=0
+surge%20bilibili%20live.js = type=http-response,pattern=^https?:\/\/api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js,script-update-interval=0
 
 # 知音漫客 （作者：pysta）hostname =
 Zymh.js = type=http-response,pattern=^https?:\/\/getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js,script-update-interval=0
