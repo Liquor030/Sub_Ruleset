@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% pan.baidu.com, api.termius.com, u.kanghuayun.com, *.googlevideo.com, mp.weixin.qq.com, *.amemv.com, getuserinfo.321mh.com, i.weread.qq.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, m.poizon.com, api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, getuserinfo-globalapi.zymk.cn, ctrl.playcvn.com, api.rr.tv, nmb.fastmirror.org, *.snssdk.com, ios.prod.ftl.netflix.com, sp.kaola.com, r.inews.qq.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
+hostname = %INSERT% pan.baidu.com, api.termius.com, u.kanghuayun.com, *.googlevideo.com, mp.weixin.qq.com, *.amemv.com, getuserinfo.321mh.com, i.weread.qq.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, m.poizon.com, api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, getuserinfo-globalapi.zymk.cn, ctrl.playcvn.com, api.rr.tv, nmb.fastmirror.org, *.snssdk.com, ios.prod.ftl.netflix.com, sp.kaola.com, r.inews.qq.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, langapi.lv-show.com, rtbapi.douyucdn.cn
 
 [Script]
 # verifyReceipt
@@ -72,3 +72,5 @@ xjsp.js = type=http-response,pattern=https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps
 91ShortVideo.js = type=http-response,pattern="^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/91ShortVideo.js,script-update-interval=0
 # 浪live
 lv-show.js = type=http-response,pattern=^https?:\/\/langapi\.lv-show\.com/.*?system/config,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/lv-show.js,script-update-interval=0
+# 斗鱼
+douyu.js = type=http-response,pattern=^https?:\/\/rtbapi\.douyucdn\.cn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/douyu.js,script-update-interval=0
