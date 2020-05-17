@@ -92,7 +92,7 @@ cfw-bypass:
 cfw-latency-timeout: 5000
 
 # 代理节点
-Proxy:
+proxies:
 # 更多协议配置示例：https://github.com/Dreamacro/clash/blob/master/README.md
 
 # Shadowsocks 支持的加密方式:
@@ -191,7 +191,7 @@ Proxy:
 #     # host: bing.com
 
 # 代理组策略
-Proxy Group:
+proxy-groups:
 
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
 - name: "UrlTest"
@@ -273,7 +273,7 @@ Proxy Group:
     - "DIRECT"
 
 # 规则
-Rule:
+rules:
 # Unbreak
 # > Google
 - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
