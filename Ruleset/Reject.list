@@ -1,4 +1,4 @@
-# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, langapi.lv-show.com, *.if.qidian.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com
+# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, langapi.lv-show.com, *.if.qidian.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com, vv.video.qq.com
 
 # > QQ音乐
 DOMAIN,ad.tencentmusic.com
@@ -108,6 +108,9 @@ URL-REGEX,^https?:\/\/.*?\.snssdk\.com\/motor\/operation\/activity\/display\/con
 URL-REGEX,^https?:\/\/.*?\.pstatp\.com\/((obj|img)\/ad|inapp\/TTAdblock\.css)
 
 # 视频类
+# > 腾讯视频
+USER-AGENT,*VBQADCommonKit*
+
 # > 爱奇艺 & PPS
 DOMAIN-SUFFIX,a.ckm.iqiyi.com
 DOMAIN-SUFFIX,ad.m.iqiyi.com
