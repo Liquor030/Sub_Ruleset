@@ -1,4 +1,4 @@
-# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, langapi.lv-show.com, *.if.qidian.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com, vv.video.qq.com
+# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, langapi.lv-show.com, *.if.qidian.com, *.youzibank.com, *.jiuhew.com, interfac?.music.163.com, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com, vv.video.qq.com
 
 # > QQ音乐
 DOMAIN,ad.tencentmusic.com
@@ -56,9 +56,16 @@ URL-REGEX,^https?:\/\/app\.jjwxc\.net\/.*?getAd
 # langapi.lv-show.com
 URL-REGEX,^https?:\/\/langapi\.lv-show\.com/.*?recommend
 
+# > 龙空
+URL-REGEX,^https?:\/\/bbs\.baishew\.com\/api\/lkong\/adv
+
 # > 起点
 # *.if.qidian.com
 URL-REGEX,^https?:\/\/.*?\.if\.qidian\.com\/.*?client\/getsplash
+
+# > 兔兔阅读
+# *.youzibank.com, *.jiuhew.com
+URL-REGEX,^https?:\/\/.*?\.(youzibank|jiuhew)\.com\/(audio\/)?ad\/
 
 # > 网易云
 # interfac?.music.163.com
