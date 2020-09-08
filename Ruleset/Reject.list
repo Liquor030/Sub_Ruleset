@@ -28,7 +28,7 @@ DOMAIN,cm.bilibili.com
 DOMAIN,miniapp.bilibili.com
 DOMAIN,thirdparty.biliapi.com
 URL-REGEX,^https?:\/\/app.bilibili.com\/x\/resource\/abtest
-URL-REGEX,^https?:\/\/app.bilibili.com\/x\/v2\/(splash|rank.*rid=(168|5)|search\/(defaultword|recommend|resource)|dataflow\/report-TINYGIF)
+URL-REGEX,^https?:\/\/app.bilibili.com\/x\/v2\/(splash|rank.*rid=(168|5)|search\/(defaultword|recommend|resource)|dataflow\/report-TINYGIF|dm\/ad)
 URL-REGEX,^https?:\/\/api.bilibili.com\/pgc\/season\/rank\/cn
 
 # > 超级课程表
@@ -92,10 +92,14 @@ DOMAIN,saad.ms.zhangyue.net
 URL-REGEX,^https?:\/\/webboot\.zhangyue\.com.*?(\/ad\/|\/pop\/|DrivenPop)
 
 # > 知乎
-# api.zhihu.com
+# api.zhihu.com, 118.89.204.198
+USER-AGENT,AVOS*
+# DO NOT GET CDN-BASED IP
+DOMAIN,118.89.204.198
 DOMAIN,mqtt.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN-SUFFIX,xdrig.com
+DOMAIN,appcloud2.zhihu.com
 URL-REGEX,^https:\/\/api.zhihu.com\/(adx\/|ab\/api|fringe\/ad|real_time|ad-style-service|banners|market\/popover|mqtt|me\/|.*launch|.*featured-comment-ad|.*recommendations)
 
 # > 中国大学慕课
