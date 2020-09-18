@@ -3,15 +3,13 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% pan.baidu.com, api.termius.com, u.kanghuayun.com, *.googlevideo.com, mp.weixin.qq.com, *.amemv.com, getuserinfo.321mh.com, i.weread.qq.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, m.poizon.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, getuserinfo-globalapi.zymk.cn, ctrl.playcvn.com, api.rr.tv, nmb.fastmirror.org, *.snssdk.com, ios.prod.ftl.netflix.com, sp.kaola.com, r.inews.qq.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, langapi.lv-show.com, rtbapi.douyucdn.cn, api.shayujizhang.com
+hostname = %INSERT% pan.baidu.com, u.kanghuayun.com, *.googlevideo.com, mp.weixin.qq.com, *.amemv.com, getuserinfo.321mh.com, i.weread.qq.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, m.poizon.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, getuserinfo-globalapi.zymk.cn, ctrl.playcvn.com, api.rr.tv, nmb.fastmirror.org, *.snssdk.com, ios.prod.ftl.netflix.com, sp.kaola.com, r.inews.qq.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, langapi.lv-show.com, rtbapi.douyucdn.cn, api.shayujizhang.com
 
 [Script]
 # verifyReceipt
 verify_receipt.js = type=http-response,pattern=^https?:\/\/(sandbox|buy)\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0
 # Baidu netdisc unlocks （作者：NobyDa） hostname = pan.baidu.com
 BaiduCloud.js = type=http-response,pattern=^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
-# Termius unlock hostname = api.termius.com
-Termius.js = type=http-response,pattern=^https?:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Termius.js,script-update-interval=0
 # 万象直播 （作者：NobyDa） hostname = u.kanghuayun.com
 wxzb.js = type=http-response,pattern=^https?:\/\/u\.kanghuayun\.com\/api\/v2\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/wxzb.js,script-update-interval=0
 # Youtube （作者：Choler）hostname = *.googlevideo.com
