@@ -23,7 +23,7 @@ mode: Rule
 log-level: info
 
 # When set to false, resolver won't translate hostnames to IPv6 addresses
-{% if request.ipv6 == "true" or request.6to4 == "true" %}
+{% if default(request.ipv6, "false") == "true" or default(request.6to4, "false") == "true" %}
 ipv6: true
 {% else %}
 ipv6: false
@@ -60,7 +60,7 @@ experimental:
 # DNS 设置
 dns:
   enable: true
-  {% if request.ipv6 == "true" or request.6to4 == "true" %}
+  {% if default(request.ipv6, "false") == "true" or default(request.6to4, "false") == "true" %}
   ipv6: true
   {% else %}
   ipv6: false
