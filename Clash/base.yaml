@@ -22,6 +22,13 @@ mode: Rule
 # info / warning / error / debug / silent
 log-level: info
 
+# When set to false, resolver won't translate hostnames to IPv6 addresses
+{% if request.ipv6 == "true" or request.6to4 == "true" %}
+ipv6: true
+{% else %}
+ipv6: false
+{% endif %}
+
 # RESTful API for clash
 external-controller: 127.0.0.1:9090
 
@@ -53,6 +60,11 @@ experimental:
 # DNS 设置
 dns:
   enable: true
+  {% if request.ipv6 == "true" or request.6to4 == "true" %}
+  ipv6: true
+  {% else %}
+  ipv6: false
+  {% endif %}
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
