@@ -4,3 +4,6 @@ DOMAIN-SUFFIX,flv.huya.com
 
 # bilibili
 DOMAIN-SUFFIX,bilivideo.com
+
+# 百度网盘
+DOMAIN-SUFFIX,baidupcs.com
