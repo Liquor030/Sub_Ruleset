@@ -7,3 +7,6 @@ DOMAIN-SUFFIX,bilivideo.com
 
 # 百度网盘
 DOMAIN-SUFFIX,baidupcs.com
+
+# NVIDIA
+DOMAIN-SUFFIX,download.nvidia.com
