@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,flv.huya.com
 
 # 百度网盘
 DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,bcsp2p.baidu.com
 
 # NVIDIA
 DOMAIN-SUFFIX,download.nvidia.com
