@@ -1,4 +1,4 @@
-# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, langapi.lv-show.com, *.if.qidian.com, *.youzibank.com, *.jiuhew.com, interface.music.163.com, interface?.music.163.com, 198.18.1.49, 101.71.154.241, 45.254.48.1, 59.111.160.195, 59.111.181.35, 59.111.181.60, 223.252.199.67, 223.252.199.66, 59.111.181.38, 39.105.63.80, 118.24.63.156, 193.112.159.225, 47.100.127.239, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com, vv.video.qq.com
+# MitM: app.bilibili.com, api.bilibili.com, apis.dongtu.com, img-ys011.didistatic.com, langapi.lv-show.com, *.if.qidian.com, *.zhoudamozi.com, *.youzibank.com, *.jiuhew.com, interface.music.163.com, interface?.music.163.com, 198.18.1.49, 101.71.154.241, 45.254.48.1, 59.111.160.195, 59.111.181.35, 59.111.181.60, 223.252.199.67, 223.252.199.66, 59.111.181.38, 39.105.63.80, 118.24.63.156, 193.112.159.225, 47.100.127.239, webboot.zhangyue.com, api.zhihu.com, www.icourse163.org, *.snssdk.com, *.amemv.com, *.musical.ly, *.pstatp.com, vv.video.qq.com
 
 # > QQ音乐
 DOMAIN,ad.tencentmusic.com
@@ -64,8 +64,8 @@ URL-REGEX,^https?:\/\/bbs\.baishew\.com\/api\/lkong\/adv
 URL-REGEX,^https?:\/\/.*?\.if\.qidian\.com\/.*?client\/getsplash
 
 # > 兔兔阅读
-# *.youzibank.com, *.jiuhew.com
-URL-REGEX,^https?:\/\/.*?\.(youzibank|jiuhew)\.com\/(audio\/)?ad\/
+# *.zhoudamozi.com, *.youzibank.com, *.jiuhew.com
+URL-REGEX,^https?:\/\/.*?\.(zhoudamozi|youzibank|jiuhew)\.com\/(audio\/)?ad\/
 
 # > 网易云
 # interface.music.163.com, interface?.music.163.com, 198.18.1.49, 101.71.154.241, 45.254.48.1, 59.111.160.195, 59.111.181.35, 59.111.181.60, 223.252.199.67, 223.252.199.66, 59.111.181.38, 39.105.63.80, 118.24.63.156, 193.112.159.225, 47.100.127.239
