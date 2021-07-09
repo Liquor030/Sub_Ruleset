@@ -7,8 +7,11 @@ IP-CIDR,169.254.0.0/16,no-resolve
 IP-CIDR,172.16.0.0/12,no-resolve
 IP-CIDR,192.0.0.0/24,no-resolve
 IP-CIDR,192.0.2.0/24,no-resolve
+IP-CIDR,192.31.196.0/24,no-resolve
+P-CIDR,192.52.193.0/24,no-resolve
 IP-CIDR,192.88.99.0/24,no-resolve
 IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,192.175.48.0/24,no-resolve
 IP-CIDR,198.18.0.0/15,no-resolve
 IP-CIDR,198.51.100.0/24,no-resolve
 IP-CIDR,203.0.113.0/24,no-resolve
@@ -24,11 +27,12 @@ IP-CIDR6,::1/128,no-resolve
 IP-CIDR6,::ffff:0:0/96,no-resolve
 IP-CIDR6,::ffff:0:0:0/96,no-resolve
 IP-CIDR6,64:ff9b::/96,no-resolve
+IP-CIDR6,64:ff9b:1::/48,no-resolve
 IP-CIDR6,100::/64,no-resolve
-IP-CIDR6,2001:0000:/32,no-resolve
-IP-CIDR6,2001:20::/28,no-resolve
+IP-CIDR6,2001::/23,no-resolve
 IP-CIDR6,2001:db8::/32,no-resolve
 IP-CIDR6,2002::/16,no-resolve
+IP-CIDR6,2620:4f:8000::/48,no-resolve
 IP-CIDR6,fc00::/7,no-resolve
 IP-CIDR6,fe80::/10,no-resolve
 IP-CIDR6,ff00::/8,no-resolve
