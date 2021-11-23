@@ -65,17 +65,16 @@ dns:
   {% else %}
   ipv6: false
   {% endif %}
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
   nameserver:
     - 223.5.5.5
     - 223.6.6.6
     - 119.29.29.29
     - 119.28.28.28
-  fallback:
-    - 202.141.162.123:5353
-    - 202.38.93.153:5353
-    - 202.141.178.13:5353
+  fake-ip-filter:
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
     
 # Clash for Windows
 cfw-bypass:
