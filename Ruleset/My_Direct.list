@@ -7,6 +7,24 @@ DOMAIN-SUFFIX,google.cn
 DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,steamserver.net
 
+#SteamDownloadSource CN
+#华为云
+DOMAIN,steampipe.steamcontent.tnkjmec.com
+#白山云
+DOMAIN,st.dl.eccdnx.com
+st.dl.bscstorage.net
+st.dl.pinyuncloud.com
+#金山云
+DOMAIN,dl.steam.clngaa.com
+#网宿
+DOMAIN,cdn.mileweb.cs.steampowered.com.8686c.com
+DOMAIN,cdn-ws.content.steamchina.com
+#腾讯云
+DOMAIN,cdn-qc.content.steamchina.com
+#阿里云
+DOMAIN,cdn-ali.content.steamchina.com
+DOMAIN,xz.pphimalayanrt.com
+
 # IPv4
 IP-CIDR,103.10.124.0/24,no-resolve
 IP-CIDR,103.10.125.0/24,no-resolve
