@@ -1,9 +1,11 @@
 # DOMAIN
 DOMAIN,fonts.googleapis.com
+DOMAIN,api.steampowered.com
 
 # DOMAIN-SUFFIX
 DOMAIN-SUFFIX,google.cn
 DOMAIN-SUFFIX,cm.steampowered.com
+DOMAIN-SUFFIX,steamserver.net
 
 # IPv4
 IP-CIDR,103.10.124.0/24,no-resolve
