@@ -17,9 +17,9 @@ Detail: /cell/detail
 用户发帖: /user/publish_list
 ===================================
 [Script]
-http-response ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|cell/detail|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
+http-response ^https?://.*\.(snssdk|pipix.com)\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|cell/detail|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
 [MITM]
-hostname = *.snssdk.com
+hostname = *.snssdk.com, *pipix.com
 */
 var body = $response.body.replace(/id\":([0-9]{15,})/g, 'id":"$1str"');
 body = JSON.parse(body);

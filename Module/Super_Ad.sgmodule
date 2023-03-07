@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% *.snssdk.com
+hostname = %INSERT% *.snssdk.com, *pipix.com
 
 [URL Rewrite]
 # Remove Super's Ad (By Liquor030)
